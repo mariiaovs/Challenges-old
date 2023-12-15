@@ -10,6 +10,15 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+const postTitle = "Just a small post";
+
+const postText = "This is the small text of my small post";
+
+let likesCount = 0;
+
+const user = "Alex";
+
+const isReported = "false";
 
 // --^-- write your code here --^--
 
@@ -18,5 +27,9 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+console.log(postTitle, postText, likesCount, user, isReported);
 
+likesCount++;
+
+console.log(likesCount);
 // --^-- write your code here --^--
