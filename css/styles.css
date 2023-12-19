@@ -271,16 +271,6 @@ width, etc. */
 /* --- */
 
 @media (min-width: 1200px) {
-  body {
-    max-width: 1300px;
-    margin: 0 auto;
-  }
-
-  header {
-    display: sticky;
-    width: 100%;
-  }
-
   .card-section {
     flex-direction: row;
     flex-wrap: wrap;
