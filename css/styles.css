@@ -295,4 +295,8 @@ width, etc. */
     width: calc(50% - 1.5 * var(--gap));
     align-self: flex-start;
   }
+
+  .main-footer {
+    justify-content: flex-start;
+  }
 }
