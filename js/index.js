@@ -21,7 +21,7 @@ printSquare(5);
 
 // Uncomment the following function calls and implement the function printCircumference
 
-printCircumference = (radius) => {
+const printCircumference = (radius) => {
   console.log(
     `The circumference of a circle with the radius ${radius} equals ${
       2 * Math.PI.toFixed(2) * radius // toFixed() returns String
