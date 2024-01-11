@@ -21,7 +21,7 @@ form.addEventListener("submit", (event) => {
 
   // --v-- write your code here --v--
   if (!tosCheckbox.checked) {
-    showTosError();
+    //showTosError();
     return;
   }
   // --^-- write your code here --^--
