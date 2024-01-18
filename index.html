@@ -4,7 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="app1.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <form data-js="form">
+      <label for="firstName">First Name</label>
+      <input name="firstName" id="firstName" required />
+      <label for="lastName">Last Name</label>
+      <input name="lastName" id="lastName" required />
+      <button>Generate Email</button>
+    </form>
+    <span data-js="generated-email">...</span>
+  </body>
 </html>
