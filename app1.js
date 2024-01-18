@@ -15,3 +15,17 @@ console.log(getUserFromEmail("nodots@example.com"));
 
 // logs { firstName: 'Jane', lastName: 'Doe' }
 console.log(getUserFromEmail("jane.doe@example.com"));
+
+const form = document.querySelector('[data-js="form"]');
+const span = document.querySelector('[data-js="guessed-name"]');
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const email = e.target.elements.email.value;
+
+  span.textContent = `${getUserFromEmail(email).firstName} ${
+    getUserFromEmail(email).lastName
+  }`;
+  e.target.reset();
+  e.target.email.focus();
+});
