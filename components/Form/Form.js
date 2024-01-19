@@ -1,3 +1,6 @@
+import cards from "../../state.js";
+import Card from "../Card/Card.js";
+
 function handleFormSubmit(event) {
   event.preventDefault();
 
