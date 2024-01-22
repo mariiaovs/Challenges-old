@@ -14,7 +14,7 @@ queryInput.addEventListener("input", (event) => {
   );
 
   if (foundCountries) {
-    foundCountries.map((foundCountry) => {
+    foundCountries.forEach((foundCountry) => {
       const countryElement = Country(foundCountry);
       container.append(countryElement);
     });
