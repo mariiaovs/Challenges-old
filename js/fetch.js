@@ -5,7 +5,6 @@ export async function fetchNewColor() {
   const colorApiUrl = `https://www.thecolorapi.com/id?hex=${hexCode}`;
   const response = await fetch(colorApiUrl);
   const data = await response.json();
-  console.log(data);
   setColorToGuess(data.name.closest_named_hex, data.name.value);
 
   /**
