@@ -34,18 +34,14 @@ const EXAMPLE_DATA = {
 };
 
 // Create dom element for a card and append it to the root
-const firstCard = Card(EXAMPLE_DATA);
-renderElement(firstCard);
-
-fetchDataAndRender();
+fetchDataAndRender().then((data) =>
+  data.forEach((card) => renderElement(Card(card)))
+);
 
 // --v-- your code below this line --v--
 
 async function fetchDataAndRender() {
   const response = await fetch("https://swapi.dev/api/people");
   const data = await response.json();
-  data.results.forEach((result) => {
-    const card = Card(result);
-    renderElement(card);
-  });
+  return data.results;
 }
