@@ -77,7 +77,7 @@ a.current {
 }
 
 /* 6. These styles should apply to all links in the footer */
-footer a {  
+footer a {
   color: inherit;
 }
 
